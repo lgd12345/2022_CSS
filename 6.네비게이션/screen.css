@@ -1,0 +1,113 @@
+html {
+    background-color: #869960;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 87%;
+}
+
+.container {
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #617140;
+}
+
+header h1 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 165%;
+}
+
+header p {
+    margin: 0;
+}
+
+.content-area {
+    border-top: 3px solid #e5e9dc;
+    border-bottom: 3px solid #e5e9dc;
+}
+
+/* 네비게이션 */
+.site-nav {
+    margin-top: 20px;
+}
+
+.site-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.site-nav li {
+    float: left;
+    margin-right: 5px;
+}
+
+.site-nav a {
+    /* a가 인라인이름ㄹ 블로으로 수정해서 크기적용 */
+    display: block;
+    color: aquamarine;
+    /* 태그에 밑줄ㅇ르 삭제 */
+    text-decoration: none;
+    padding: 10px 30px;
+    border: 3px solid #e5e9dc;
+    border-bottom: none;
+}
+
+.site-nav a:hover {
+    background-color: #e5e9dc;
+}
+
+.content-area {
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+.main-area {
+    width: 66%;
+    float: left;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+.sidebar {
+    width: 34%;
+    float: left;
+    background-color: #e5e9dc;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    font-size: 85%;
+}
+
+footer {
+    text-align: center;
+    font-size: 85%;
+    color: #999;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    zoom: 1;
+}

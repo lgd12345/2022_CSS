@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>특수효과트랜스폼</title>
+    <style>
+        body {
+            background: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .box {
+            background: white;
+            width: 300px;
+            height: 300px;
+            /* Transform - rotate, scale, skew */
+
+            /* rotate각도 회전 */
+            /* transform: rotate(25deg); */
+
+            /* skew 비스듬하게 회전*/
+            /* transform: skew(25deg); */
+
+            /* 크기가 배수 (2배) 크기 */
+            /* transform: scale(2); */
+
+            /* 변화할때 시간 */
+            transition: all 3s ease-in-out;
+            /* 변화하는 각도 기준점 */
+            transform-origin: 0 0;
+        }
+
+        .box:hover {
+            transform: rotate(180deg);
+            /* transform: skew(25deg); */
+            /* transform: scale(2); */
+            /* border-radius: 50%; */
+            background-color: blue;
+            /* translateY세로이동 x가로이동 */
+            /* transform: translateY(200px); */
+            /* transform: translateX(-200px); */
+            /* x & y */
+            /* transform: translate(100px, 100px)scale(1.5)skew(25deg); */
+            /* transform: translate3d(100px, 100px, 100px); */
+
+            /* transform: skew(25deg)scale(1.5); */
+
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>
